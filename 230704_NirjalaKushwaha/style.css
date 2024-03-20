@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(204, 219, 237);
+    color:black;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(60, 60, 189);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+
+    color: rgb(153, 153, 226);
+    font-size: 1.5rem;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+
+    font-size: 2rem;
+
+
+}
+
+.leftSection .btn {
+
+    padding: 12px;
+
+
+}
+
+.rightSection img {
+    width: 80%;
+
+
+}
+
+.purple {
+    color: rgb(190, 74, 213);
+}
+
+.contact{
+    background-color: bisque;
+    height: 833px;
+}
+.text-center{
+    text-align:center;
+    padding: 30px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.form{
+    max-width: 1000px;
+    margin: 25px;
+}
+.form input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width:100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+.form textarea {
+    margin: 14px 0;
+    padding: 5px 3px;
+    width:100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+
+ .btn-dark{
+    color: black;
+    border:2px solid black;
+ }
+.footer .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+}
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+
+}
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size:1.5rem 0;
+    color:var(--light-color)
+    
+}
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+.About-Us{
+    padding:80px 0px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+}
+.About-Us h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    
+}
+.About-Us img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+    margin: 0 592px;
+}
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemineers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+       
+<body>
+    <header>
+        <nav>
+            <div class="left">CHEMINEERS SOCIETY</div>
+            <div class="right">
+                <ul>
+                    <!-- <li><a class="nav_link" href="/">Home</a></li>
+                    <li><a class="nav_link" href="#About-Us">About Us</a></li>
+                    <li><a class="nav_link" href="/">Events</a></li> -->
+                    <li><a class="nav_link" href="#home">Home</a></li>
+                    <li><a class="nav_link" href="#About-Us">About Us</a></li>
+                    <li><a class="nav_link" href="#Events">Events</a></li>
+                   
+                   
+                    <li><a class="nav_link" href="Contact.html">Contact Us</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id = "home " class="firstSection">
+            <div class="leftSection">
+                CHEMINEERS SOCIETY <span class="purple">IITK</span>
+                <div> Our society is a student body aiming to promote intellectual, academic, and cultural activities among students of our Department and help them foster their overall development.
+                    
+                    <div class="buttons">
+                        <a href="https://www.iitk.ac.in/che/chemineers/Chemineers_Constitution.pdf" class="btn">Constitution</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="chemineers_logo.png" alt="">
+
+            </div>
+
+        </section>
+        <hr>
+        <section id="About-Us" class="About-Us">
+            <div class="container">
+                <div class="row">
+                    <div class="flex">
+                        <h2>About Us</h2>
+                        
+                        <p>The society organizes a variety of departmental events, including Happy Hours, Technical Workshops, Freshers Party, Alumni Talks, Farewell Party, Sports Tournaments, Higher Studies Sessions, and the Chemical Engineering Fest- ‘EXERGY’..</p>
+                       <h2> What we achieve?</h2>
+                       <p>
+                        We help students identify campus resources and foster harmonious relationships among the students, faculty, and alumni of the CHE department and ensure that there is no communication gap between them</p>
+                    </div>
+                    <div class="flex">
+                        <img src="c.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- <section class="Contact">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="form">
+                <input  class="form-input" type="text" name="name" placeholder="Enter Your Name">
+                <input class="form-input" type="text" name="phone no." placeholder=" Enter YourPhone no.">
+                <input  class="form-input"type="text" name="email id" placeholder="Enter Your Email id">
+                <textarea class="form-input" name="text" id="text" cols="30" rowa="10" placeholder="Feedback"></textarea>
+                <button class="btn btn-dark">Submit</button>
+
+            </div>
+            
+
+
+        </section> -->
+       
+       
+
+    </main>
+    
+    <section class="footer">
+        <div class="box-container">
+    <div class="box">
+        <h3>contact info</h3>
+        <a href="#">+2572899900</a>
+        <a href="#">chemineers@iitk.ac.in</a>
+    </div>
+    <div class="box">
+        <h3>follow us</h3>
+        <a href="https://www.facebook.com/ChemineersSociety/">facebook</a>
+        <a href="https://www.instagram.com/chemineersiitk/">instagram</a>
+        <a href="https://www.youtube.com/@chemineersiitk8410">youtube</a>
+    </div>
+        </div>
+    </section>
+   
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav_link');
+    
+            function changeLinkState() {
+                let index = sections.length;
+    
+                while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+    
+                navLinks.forEach((link) => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            }
+    
+            changeLinkState();
+            window.addEventListener('scroll', changeLinkState);
+        });
+    </script>
+    
+</body>
+
+</html>
